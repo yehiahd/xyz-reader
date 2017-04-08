@@ -21,8 +21,9 @@
                 <!--suppress AndroidLintContentDescription -->
                 <ImageView
                     android:id="@+id/photo"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop" />
 
                 <View
                     android:layout_width="match_parent"
@@ -99,9 +100,9 @@
         android:layout_marginBottom="@dimen/fab_margin"
         android:layout_marginEnd="@dimen/fab_margin"
         android:contentDescription="@string/action_share"
-        app:elevation="@dimen/fab_elevation"
         android:src="@drawable/ic_share"
-        app:layout_behavior="com.example.xyzreader.ui.ScrollAwareFABBehavior"
-        android:stateListAnimator="@anim/fab_state_list_anim" />
+        android:stateListAnimator="@anim/fab_state_list_anim"
+        app:elevation="@dimen/fab_elevation"
+        app:layout_behavior="com.example.xyzreader.ui.ScrollAwareFABBehavior" />
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>
